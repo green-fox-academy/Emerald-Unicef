@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Unicef.Models
 {
-    public class ISheet
+    public interface ISheet
     {
     }
 }

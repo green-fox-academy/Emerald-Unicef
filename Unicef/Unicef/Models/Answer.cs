@@ -8,6 +8,6 @@ namespace Unicef.Models
     public class Answer
     {
         public string Description { get; set; }
-        public bool Value { get; set; }
+        public dynamic Value { get; set; }
     }
 }
