@@ -10,8 +10,6 @@ namespace Unicef.Models
         public long QueryId { get; set; }
         public Form Form { get; set; }
         public Quiz Quiz { get; set; }
-
-
     }
 }
 

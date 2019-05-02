@@ -14,29 +14,5 @@ namespace Unicef.Models
         public Quiz Quiz { get; set; }
         public Form Form { get; set; }
 
-        // public ISheet Sheet { get; set; }
-        //public Quiz Quiz
-        //{
-        //    get { return Quiz; }
-        //    set
-        //    {
-        //        if (Form == null)
-        //        {
-        //            Quiz = value;
-        //        }
-        //    }
-        //}
-
-        //public Form Form
-        //{
-        //    get { return Form; }
-        //    set
-        //    {
-        //        if (Quiz == null)
-        //        {
-        //            Form = value;
-        //        }
-        //    }
-        //}
     }
 }
