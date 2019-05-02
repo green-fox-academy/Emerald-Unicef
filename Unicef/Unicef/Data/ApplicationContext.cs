@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-<<<<<<< HEAD
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,15 +16,20 @@ namespace Unicef.Data
         public DbSet<Question> Questions { get; set; }
         public DbSet<Form> Forms { get; set; }
         public DbSet<Quiz> Quizes { get; set; }
-    }
-}
-=======
 
-namespace Unicef
-{
-    public class ApplicationContext : DbContext
-    {
-        public ApplicationContext(DbContextOptions options) : base(options) { }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Query>()
+            .HasOne<Form>(s => s.Form)
+            .WithOne(ad => ad.Query)
+            .HasForeignKey<Query>(ad => ad.QueryId);
+
+            modelBuilder.Entity<Query>()
+            .HasOne<Quiz>(s => s.Quiz)
+            .WithOne(ad => ad.Query)
+            .HasForeignKey<Query>(ad => ad.QueryId);
+            modelBuilder.Entity<Query>().HasOne<Form>();
+            modelBuilder.Entity<Query>().HasOne<Quiz>();
+        }
     }
 }
->>>>>>> master

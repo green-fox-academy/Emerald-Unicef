@@ -8,7 +8,13 @@ namespace Unicef.Models
     public class Form : ISheet
     {
         public long FormId { get; set; }
-        public ICollection<IQuestion> Questions { get; set; }
+        public ICollection<Question> Questions { get; set; }
+        public int QueryId { get; set; }
         public Query Query { get; set; }
+
+        public Form()
+        {
+            
+        }
     }
 }

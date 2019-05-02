@@ -8,7 +8,14 @@ namespace Unicef.Models
     public class Quiz : ISheet
     {
         public long QuizId { get; set; }
-        public ICollection<IQuestion> Questions { get; set; }
+        public ICollection<Question> Questions { get; set; }
+        public int QueryId { get; set; }
         public Query Query { get; set; }
+
+        public Quiz()
+        {
+            
+        }
+        
     }
 }
