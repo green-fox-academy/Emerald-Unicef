@@ -13,7 +13,7 @@ namespace Unicef.Models
         public int Value { get; set; }
 =======
 
-        public dynamic Value { get; set; }
+        public int Value { get; set; }
 
 
 >>>>>>> bd84a4b5cd0afe6dd5f14f1d0eabad121c3514ee
