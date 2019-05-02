@@ -10,8 +10,33 @@ namespace Unicef.Models
         public long QuestionId { get; set; }
         public string Description { get; set; }
         public List<Answer> Answers { get; set; }
-        // public ISheet Sheet { get; set; }
-        public Form Form { get; set; }
+
         public Quiz Quiz { get; set; }
+        public Form Form { get; set; }
+
+        // public ISheet Sheet { get; set; }
+        //public Quiz Quiz
+        //{
+        //    get { return Quiz; }
+        //    set
+        //    {
+        //        if (Form == null)
+        //        {
+        //            Quiz = value;
+        //        }
+        //    }
+        //}
+
+        //public Form Form
+        //{
+        //    get { return Form; }
+        //    set
+        //    {
+        //        if (Quiz == null)
+        //        {
+        //            Form = value;
+        //        }
+        //    }
+        //}
     }
 }
