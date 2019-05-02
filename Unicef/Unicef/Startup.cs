@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
+using Unicef.Data;
 
 namespace Unicef
 {
@@ -29,7 +30,7 @@ namespace Unicef
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationContext>(builder =>
+            services.AddDbContext<ApplicatonContext>(builder =>
                 builder.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddMvc().AddJsonOptions(options =>
