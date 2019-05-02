@@ -7,7 +7,13 @@ namespace Unicef.Models
 {
     public class Answer
     {
+        public long AnswerId { get; set; }
         public string Description { get; set; }
+
         public dynamic Value { get; set; }
+
+
+        public Question Question { get; set; }
+
     }
 }

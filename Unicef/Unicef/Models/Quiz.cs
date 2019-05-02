@@ -5,14 +5,21 @@ using System.Threading.Tasks;
 
 namespace Unicef.Models
 {
-    public class Quiz : ISheet
+    public class Quiz
     {
-        public List<Question> Questions { get; set; }
+
+        public long QuizId { get; set; }
+        public ICollection<Question> Questions { get; set; }
+        public int QueryId { get; set; }
+
         public Query Query { get; set; }
 
         public Quiz()
         {
-            this.Questions = new List<Question>();
+
+            
+        this.Questions = new List<Question>();
         }
+
     }
 }

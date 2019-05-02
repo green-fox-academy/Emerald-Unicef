@@ -5,13 +5,18 @@ using System.Threading.Tasks;
 
 namespace Unicef.Models
 {
-    public class Form : ISheet
+    public class Form
     {
-        public List<Question> Questions { get; set; }
+
+        public long FormId { get; set; }
+        public ICollection<Question> Questions { get; set; }
+        public int QueryId { get; set; }
         public Query Query { get; set; }
+
         public Form()
         {
             this.Questions = new List<Question>();
+
         }
     }
 }
