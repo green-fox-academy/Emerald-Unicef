@@ -7,7 +7,7 @@ namespace Unicef.Models
 {
     public class Question : IQuestion
     {
-        public int Description { get; set; }
+        public string Description { get; set; }
         public List<Answer> Answers { get; set; }
         public ISheet Sheet { get; set; }
     }
