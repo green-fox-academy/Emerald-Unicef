@@ -45,9 +45,9 @@ namespace Unicef.Controllers
 
             Question question13 = new Question { Description = "Franciskát és testvérét a szülei mindig megverik otthon, ha valami rosszat csinál. Megtehetik ezt?", Sheet = quiz, Answers = new List<Answer> { new Answer { Description = "Nem, a gyerekeket egyáltalán nem szabad megverni.", Value = true }, new Answer { Description = "Igen, egy szülő bármit megtehet.", Value = true }, new Answer { Description = "Csak kicsit verhetik meg, nagyon – például úgy, hogy nyoma maradjon, nem.", Value = true } } };
 
-            form.Questions = new List<IQuestion> { question1, question2, question3, question4, question5, question6 };
+            form.Questions = new List<Question> { question1, question2, question3, question4, question5, question6 };
 
-            quiz.Questions = new List<IQuestion> { question7, question8, question9, question10, question11, question12, question13 };
+            quiz.Questions = new List<Question> { question7, question8, question9, question10, question11, question12, question13 };
             query.Form = form;
             query.Quiz = quiz;
         }
@@ -57,5 +57,11 @@ namespace Unicef.Controllers
         {
             return Ok(query);
         }
+
+        //[HttpPost("postquiz")]
+        //public IActionResult PostQuiz(FromFormAttribute )
+        //{
+
+        //}
     }
 }

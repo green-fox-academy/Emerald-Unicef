@@ -7,12 +7,12 @@ namespace Unicef.Models
 {
     public class Quiz : ISheet
     {
-        public List<IQuestion> Questions { get; set; }
+        public List<Question> Questions { get; set; }
         public Query Query { get; set; }
 
         public Quiz()
         {
-            this.Questions = new List<IQuestion>();
+            this.Questions = new List<Question>();
         }
     }
 }
