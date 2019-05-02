@@ -9,6 +9,8 @@ namespace Unicef.Data
 {
     public class ApplicatonContext : DbContext
     {
+        public ApplicatonContext(DbContextOptions options) : base(options) { }
+
         public DbSet<Query> Queries { get; set; }
         public DbSet<Answer> Answers { get; set; }
         public DbSet<Question> Questions { get; set; }
