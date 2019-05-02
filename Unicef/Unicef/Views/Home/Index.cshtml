@@ -13,21 +13,77 @@
     <form method="post" action="submit">
         <h3>Kérjük, hogy 1-től 5-ig (ahol az 1-es a legrosszabb és az 5-ös a legjobb) értékeld:</h3>
         <ul>
-            <li>az UNICEF Ébresztő-órát: <input type="number" name="" min="1" max="5" /></li>
-            <li>az UNICEF előadópárt: <input type="number" name="" min="1" max="5" /></li>
-            <li>mennyire érezted hasznosnak ezt a 90 percet: <input type="number" name="" min="1" max="5" /></li>
+            <li>az UNICEF Ébresztő-órát: <input type="number" name="ebreszto" min="1" max="5" /></li>
+            <li>az UNICEF előadópárt: <input type="number" name="eloado" min="1" max="5" /></li>
+            <li>mennyire érezted hasznosnak ezt a 90 percet: <input type="number" name="90perc" min="1" max="5" /></li>
         </ul>
 
         <h3>Beszéltél már valakivel vagy valahol a gyerekjogokról? Ha igen, kivel-hol?</h3>
-        <label><input type="checkbox" name="a" /> iskolában</label><br />
-        <label><input type="checkbox" name="a" /> otthon szülővel</label><br />
-        <label><input type="checkbox" name="a" /> családban</label><br />
-        <label><input type="checkbox" name="a" /> baráttal</label><br />
-        <label><input type="checkbox" name="a" /> UNICEF-től hallottam róla</label><br />
-        <label><input type="checkbox" name="a" /> interneten olvastam róla</label><br />
-        <label><input type="checkbox" name="a" /> TV-ben hallottam</label><br />
-        <label><input type="checkbox" name="a" /> egyéb</label><br />
-        <label><input type="checkbox" name="a" /> Nem, még sosem hallottam a gyerekjogokról</label><br />
+        <label><input type="checkbox" name="1a" /> iskolában</label><br />
+        <label><input type="checkbox" name="1b" /> otthon szülővel</label><br />
+        <label><input type="checkbox" name="1c" /> családban</label><br />
+        <label><input type="checkbox" name="1d" /> baráttal</label><br />
+        <label><input type="checkbox" name="1e" /> UNICEF-től hallottam róla</label><br />
+        <label><input type="checkbox" name="1f" /> interneten olvastam róla</label><br />
+        <label><input type="checkbox" name="1g" /> TV-ben hallottam</label><br />
+        <label><input type="checkbox" name="1h" /> egyéb</label><br />
+        <label><input type="checkbox" name="1i" /> Nem, még sosem hallottam a gyerekjogokról</label><br />
+
+        <h3>Mi volt a leghasznosabb abból, amit az Ébresztő-órán hallottál?</h3>
+        <label><input type="checkbox" name="2a" /> gyermekjogok</label><br />
+        <label><input type="checkbox" name="2b" /> szegény gyerekek helyzete a világban</label><br />
+        <label><input type="checkbox" name="2c" /> UNICEF munkája</label><br />
+        <label><input type="checkbox" name="2d" /> internetes zaklatást</label><br />
+        <label><input type="checkbox" name="2e" /> segítségnyújtás</label><br />
+        <label><input type="checkbox" name="2f" /> játék</label><br />
+        <label><input type="checkbox" name="2g" /> film</label><br />
+        <label><input type="checkbox" name="2h" /> minden</label><br />
+        <label><input type="checkbox" name="2i" /> semmi</label><br />
+
+
+        <h3>Az Ébresztő-óra melyik része, melyik játék tetszett a legjobban?</h3>
+        <label><input type="checkbox" name="3a" /> gyermekjogok</label><br />
+        <label><input type="checkbox" name="3b" /> szegény gyerekek helyzete a világban</label><br />
+        <label><input type="checkbox" name="3c" /> UNICEF munkája</label><br />
+        <label><input type="checkbox" name="3d" /> internetes zaklatást</label><br />
+        <label><input type="checkbox" name="3e" /> segítségnyújtás</label><br />
+        <label><input type="checkbox" name="3f" /> játék</label><br />
+        <label><input type="checkbox" name="3g" /> film</label><br />
+        <label><input type="checkbox" name="3h" /> minden</label><br />
+        <label><input type="checkbox" name="3i" /> semmi</label><br />
+
+
+        <h3>Miről lett volna jó még többet beszélgetni?</h3>
+        <label><input type="checkbox" name="4a" /> gyermekjogok</label><br />
+        <label><input type="checkbox" name="4b" /> szegény gyerekek helyzete a világban</label><br />
+        <label><input type="checkbox" name="4c" /> UNICEF munkája</label><br />
+        <label><input type="checkbox" name="4d" /> internetes zaklatást</label><br />
+        <label><input type="checkbox" name="4e" /> segítségnyújtás</label><br />
+        <label><input type="checkbox" name="4f" /> játék</label><br />
+        <label><input type="checkbox" name="4g" /> film</label><br />
+        <label><input type="checkbox" name="4h" /> minden</label><br />
+        <label><input type="checkbox" name="4i" /> semmi</label><br />
+
+        <h3>Mi az, amiről túl sokat beszéltünk, vagy ami kevésbé tetszett?</h3>
+        <label><input type="checkbox" name="5a" /> gyermekjogok</label><br />
+        <label><input type="checkbox" name="5b" /> szegény gyerekek helyzete a világban</label><br />
+        <label><input type="checkbox" name="5c" /> UNICEF munkája</label><br />
+        <label><input type="checkbox" name="5d" /> internetes zaklatást</label><br />
+        <label><input type="checkbox" name="5e" /> segítségnyújtás</label><br />
+        <label><input type="checkbox" name="5f" /> játék</label><br />
+        <label><input type="checkbox" name="5g" /> film</label><br />
+        <label><input type="checkbox" name="5h" /> minden</label><br />
+        <label><input type="checkbox" name="5i" /> semmi</label><br />
+
+        <h2>Kvíz</h2>
+        <p>Ezzel a játékos kvízzel azt szeretnénk megtudni, hogy mire emlékeztek az órából. Ez nem dolgozat, senki nem fogja leosztályozni, kérjük, a nevedet se írd rá!</p>
+        <ol>
+            <li><p>A gyermekek jogainak gyűjteményét az ENSZ Gyermekjogi egyezménye tartalmazza.  De mit jelentenek a gyermekjogok?</p>
+            <ul>
+                <li></li>
+            </ul>
+            </li>
+        </ol>
 
         <input type="submit" value="Küldés" />
     </form>
