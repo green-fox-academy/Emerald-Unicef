@@ -2,7 +2,6 @@
 @{
     ViewData["Title"] = "Unicef";
 }
-
 <header>
     @*<img src="~/Images/ebreszto.png" alt="Unicef logo" />*@
     <img src="https://lh4.googleusercontent.com/8FFxILqS7i4RQI_JgexL2h4zq55HeL8XZe6AFL0llYmeYJjC5UO9ULd_ckQKAq8wyiXsPVP2mB7CRVrIUGL1Ccy6gd1mOvaJh-wHyBxj_B8OmRwOuhGd5UQdpLFeLru3y8XdgWcyUg2s8sO-WQ" width="605" height="73" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);" />
@@ -10,7 +9,7 @@
 
 <h2>Kiváncsiak vagyunk a véleményedre!</h2>
 <article>
-    <form method="post" action="postquiz">
+    <form id="boti" method="post" action="postquiz">
         <h3>Kérjük, hogy 1-től 5-ig (ahol az 1-es a legrosszabb és az 5-ös a legjobb) értékeld:</h3>
         <ul>
             <li>az UNICEF Ébresztő-órát: <input type="number" name="ebreszto" min="1" max="5" /></li>
@@ -19,61 +18,61 @@
         </ul>
 
         <h3>Beszéltél már valakivel vagy valahol a gyerekjogokról? Ha igen, kivel-hol?</h3>
-        <label><input type="checkbox" name="1a" /> iskolában</label><br />
-        <label><input type="checkbox" name="1b" /> otthon szülővel</label><br />
-        <label><input type="checkbox" name="1c" /> családban</label><br />
-        <label><input type="checkbox" name="1d" /> baráttal</label><br />
-        <label><input type="checkbox" name="1e" /> UNICEF-től hallottam róla</label><br />
-        <label><input type="checkbox" name="1f" /> interneten olvastam róla</label><br />
-        <label><input type="checkbox" name="1g" /> TV-ben hallottam</label><br />
-        <label><input type="checkbox" name="1h" /> egyéb</label><br />
-        <label><input type="checkbox" name="1i" /> Nem, még sosem hallottam a gyerekjogokról</label><br />
+        <label><input type="checkbox" name="a1" /> iskolában</label><br />
+        <label><input type="checkbox" name="b1" /> otthon szülővel</label><br />
+        <label><input type="checkbox" name="c1" /> családban</label><br />
+        <label><input type="checkbox" name="d1" /> baráttal</label><br />
+        <label><input type="checkbox" name="e1" /> UNICEF-től hallottam róla</label><br />
+        <label><input type="checkbox" name="f1" /> interneten olvastam róla</label><br />
+        <label><input type="checkbox" name="g1" /> TV-ben hallottam</label><br />
+        <label><input type="checkbox" name="h1" /> egyéb</label><br />
+        <label><input type="checkbox" name="i1" /> Nem, még sosem hallottam a gyerekjogokról</label><br />
 
         <h3>Mi volt a leghasznosabb abból, amit az Ébresztő-órán hallottál?</h3>
-        <label><input type="checkbox" name="2a" /> gyermekjogok</label><br />
-        <label><input type="checkbox" name="2b" /> szegény gyerekek helyzete a világban</label><br />
-        <label><input type="checkbox" name="2c" /> UNICEF munkája</label><br />
-        <label><input type="checkbox" name="2d" /> internetes zaklatást</label><br />
-        <label><input type="checkbox" name="2e" /> segítségnyújtás</label><br />
-        <label><input type="checkbox" name="2f" /> játék</label><br />
-        <label><input type="checkbox" name="2g" /> film</label><br />
-        <label><input type="checkbox" name="2h" /> minden</label><br />
-        <label><input type="checkbox" name="2i" /> semmi</label><br />
+        <label><input type="checkbox" name="a2" /> gyermekjogok</label><br />
+        <label><input type="checkbox" name="b2" /> szegény gyerekek helyzete a világban</label><br />
+        <label><input type="checkbox" name="c2" /> UNICEF munkája</label><br />
+        <label><input type="checkbox" name="d2" /> internetes zaklatást</label><br />
+        <label><input type="checkbox" name="e2" /> segítségnyújtás</label><br />
+        <label><input type="checkbox" name="f2" /> játék</label><br />
+        <label><input type="checkbox" name="g2" /> film</label><br />
+        <label><input type="checkbox" name="h2" /> minden</label><br />
+        <label><input type="checkbox" name="i2" /> semmi</label><br />
 
 
         <h3>Az Ébresztő-óra melyik része, melyik játék tetszett a legjobban?</h3>
-        <label><input type="checkbox" name="3a" /> gyermekjogok</label><br />
-        <label><input type="checkbox" name="3b" /> szegény gyerekek helyzete a világban</label><br />
-        <label><input type="checkbox" name="3c" /> UNICEF munkája</label><br />
-        <label><input type="checkbox" name="3d" /> internetes zaklatást</label><br />
-        <label><input type="checkbox" name="3e" /> segítségnyújtás</label><br />
-        <label><input type="checkbox" name="3f" /> játék</label><br />
-        <label><input type="checkbox" name="3g" /> film</label><br />
-        <label><input type="checkbox" name="3h" /> minden</label><br />
-        <label><input type="checkbox" name="3i" /> semmi</label><br />
+        <label><input type="checkbox" name="a3" /> gyermekjogok</label><br />
+        <label><input type="checkbox" name="b3" /> szegény gyerekek helyzete a világban</label><br />
+        <label><input type="checkbox" name="c3" /> UNICEF munkája</label><br />
+        <label><input type="checkbox" name="d3" /> internetes zaklatást</label><br />
+        <label><input type="checkbox" name="e3" /> segítségnyújtás</label><br />
+        <label><input type="checkbox" name="f3" /> játék</label><br />
+        <label><input type="checkbox" name="g3" /> film</label><br />
+        <label><input type="checkbox" name="h3" /> minden</label><br />
+        <label><input type="checkbox" name="i3" /> semmi</label><br />
 
 
         <h3>Miről lett volna jó még többet beszélgetni?</h3>
-        <label><input type="checkbox" name="4a" /> gyermekjogok</label><br />
-        <label><input type="checkbox" name="4b" /> szegény gyerekek helyzete a világban</label><br />
-        <label><input type="checkbox" name="4c" /> UNICEF munkája</label><br />
-        <label><input type="checkbox" name="4d" /> internetes zaklatást</label><br />
-        <label><input type="checkbox" name="4e" /> segítségnyújtás</label><br />
-        <label><input type="checkbox" name="4f" /> játék</label><br />
-        <label><input type="checkbox" name="4g" /> film</label><br />
-        <label><input type="checkbox" name="4h" /> minden</label><br />
-        <label><input type="checkbox" name="4i" /> semmi</label><br />
+        <label><input type="checkbox" name="a4" /> gyermekjogok</label><br />
+        <label><input type="checkbox" name="b4" /> szegény gyerekek helyzete a világban</label><br />
+        <label><input type="checkbox" name="c4" /> UNICEF munkája</label><br />
+        <label><input type="checkbox" name="d4" /> internetes zaklatást</label><br />
+        <label><input type="checkbox" name="e4" /> segítségnyújtás</label><br />
+        <label><input type="checkbox" name="f4" /> játék</label><br />
+        <label><input type="checkbox" name="g4" /> film</label><br />
+        <label><input type="checkbox" name="h4" /> minden</label><br />
+        <label><input type="checkbox" name="i4" /> semmi</label><br />
 
         <h3>Mi az, amiről túl sokat beszéltünk, vagy ami kevésbé tetszett?</h3>
-        <label><input type="checkbox" name="5a" /> gyermekjogok</label><br />
-        <label><input type="checkbox" name="5b" /> szegény gyerekek helyzete a világban</label><br />
-        <label><input type="checkbox" name="5c" /> UNICEF munkája</label><br />
-        <label><input type="checkbox" name="5d" /> internetes zaklatást</label><br />
-        <label><input type="checkbox" name="5e" /> segítségnyújtás</label><br />
-        <label><input type="checkbox" name="5f" /> játék</label><br />
-        <label><input type="checkbox" name="5g" /> film</label><br />
-        <label><input type="checkbox" name="5h" /> minden</label><br />
-        <label><input type="checkbox" name="5i" /> semmi</label><br />
+        <label><input type="checkbox" name="a5" /> gyermekjogok</label><br />
+        <label><input type="checkbox" name="b5" /> szegény gyerekek helyzete a világban</label><br />
+        <label><input type="checkbox" name="c5" /> UNICEF munkája</label><br />
+        <label><input type="checkbox" name="d5" /> internetes zaklatást</label><br />
+        <label><input type="checkbox" name="e5" /> segítségnyújtás</label><br />
+        <label><input type="checkbox" name="f5" /> játék</label><br />
+        <label><input type="checkbox" name="g5" /> film</label><br />
+        <label><input type="checkbox" name="h5" /> minden</label><br />
+        <label><input type="checkbox" name="i5" /> semmi</label><br />
 
         <h2>Kvíz</h2>
         <p>Ezzel a játékos kvízzel azt szeretnénk megtudni, hogy mire emlékeztek az órából. Ez nem dolgozat, senki nem fogja leosztályozni, kérjük, a nevedet se írd rá!</p>
@@ -137,9 +136,9 @@
             <li>
                 <p>Franciskát és testvérét a szülei mindig megverik otthon, ha valami rosszat csinál.<br />Megtehetik ezt? </p>
                 <ul>
-                    <li><label><input type="radio" name="q2" value="a" />Nem, a gyerekeket egyáltalán nem szabad megverni.</label></li>
-                    <li><label><input type="radio" name="q2" value="b" />Igen, egy szülő bármit megtehet.</label></li>
-                    <li><label><input type="radio" name="q2" value="c" />Csak kicsit verhetik meg, nagyon – például úgy, hogy nyoma maradjon, nem.</label></li>
+                    <li><label><input type="radio" name="q7" value="a" />Nem, a gyerekeket egyáltalán nem szabad megverni.</label></li>
+                    <li><label><input type="radio" name="q7" value="b" />Igen, egy szülő bármit megtehet.</label></li>
+                    <li><label><input type="radio" name="q7" value="c" />Csak kicsit verhetik meg, nagyon – például úgy, hogy nyoma maradjon, nem.</label></li>
                 </ul>
             </li>
         </ol>
