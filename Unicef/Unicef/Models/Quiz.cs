@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Unicef.Models
 {
-    public class Quiz : ISheet
+    public class Quiz
     {
         public long QuizId { get; set; }
         public ICollection<Question> Questions { get; set; }

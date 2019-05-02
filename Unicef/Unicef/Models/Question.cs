@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Unicef.Models
 {
-    public class Question : IQuestion
+    public class Question
     {
         public long QuestionId { get; set; }
         public string Description { get; set; }
