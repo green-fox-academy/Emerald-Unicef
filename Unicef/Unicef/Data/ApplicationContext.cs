@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+<<<<<<< HEAD
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,3 +19,13 @@ namespace Unicef.Data
         public DbSet<Quiz> Quizes { get; set; }
     }
 }
+=======
+
+namespace Unicef
+{
+    public class ApplicationContext : DbContext
+    {
+        public ApplicationContext(DbContextOptions options) : base(options) { }
+    }
+}
+>>>>>>> master
