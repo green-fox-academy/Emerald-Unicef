@@ -9,5 +9,9 @@ namespace Unicef.Models
     {
         public List<IQuestion> Questions { get; set; }
         public Query Query { get; set; }
+        public Form()
+        {
+            this.Questions = new List<IQuestion>();    
+        }
     }
 }
