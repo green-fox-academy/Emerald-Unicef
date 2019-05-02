@@ -8,5 +8,6 @@ namespace Unicef.Models
     public class Form : ISheet
     {
         public List<IQuestion> Questions { get; set; }
+        public Query Query { get; set; }
     }
 }
