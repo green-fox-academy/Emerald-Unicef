@@ -1,0 +1,35 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.headtitle {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+ol p {
+    font-weight: bold;
+}
+
+.quiztitle{
+    padding-top:5%;
+}
+
+.info{
+    font-style:italic;
+}
+
+hr {
+    background-color: #fff;
+    border-top: 2px dashed #8c8b8b;
+}
+
+input[type="radio"]:checked, input[type="checkbox"]:checked
+{
+    color: aqua;
+}
