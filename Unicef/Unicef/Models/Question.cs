@@ -9,5 +9,6 @@ namespace Unicef.Models
     {
         public int Description { get; set; }
         public List<Answer> Answers { get; set; }
+        public ISheet Sheet { get; set; }
     }
 }
