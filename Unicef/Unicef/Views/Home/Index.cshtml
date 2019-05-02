@@ -4,149 +4,152 @@
 }
 <link rel="stylesheet" href="~/Content/bootstrap.css" />
 <link rel="stylesheet" href="~/Content/Style.css" />
-@*<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">*@
 <script src="~/Content/bootstrap.min.js"></script>
-<header>
-    <img src="~/Images/ebreszto.png" alt="Unicef logo" />
-    @*<img src="https://lh4.googleusercontent.com/8FFxILqS7i4RQI_JgexL2h4zq55HeL8XZe6AFL0llYmeYJjC5UO9ULd_ckQKAq8wyiXsPVP2mB7CRVrIUGL1Ccy6gd1mOvaJh-wHyBxj_B8OmRwOuhGd5UQdpLFeLru3y8XdgWcyUg2s8sO-WQ" width="605" height="73" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);" />*@
-</header>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body class="container">
+    <header>
+        <img src="~/Images/ebreszto.png" class="img-fluid" alt="Unicef logo" />
+    </header>
 
-<h2>Kiváncsiak vagyunk a véleményedre!</h2>
-<article>
-    <form id="boti" method="post" action="postquiz">
-        <h3>Kérjük, hogy 1-től 5-ig (ahol az 1-es a legrosszabb és az 5-ös a legjobb) értékeld:</h3>
-        <ul>
-            <li>az UNICEF Ébresztő-órát: <input type="number" name="ebreszto" min="1" max="5" /></li>
-            <li>az UNICEF előadópárt: <input type="number" name="eloado" min="1" max="5" /></li>
-            <li>mennyire érezted hasznosnak ezt a 90 percet: <input type="number" name="90perc" min="1" max="5" /></li>
-        </ul>
+    <h1 class="text-center headtitle">Kiváncsiak vagyunk a véleményedre!</h1>
+    <article>
+        <form id="boti" method="post" action="postquiz">
+            <h3>Kérjük, hogy 1-től 5-ig (ahol az 1-es a legrosszabb és az 5-ös a legjobb) értékeld:</h3>
+            <ul>
+                <li>az UNICEF Ébresztő-órát: <input type="number" name="ebreszto" min="1" max="5" /></li>
+                <li>az UNICEF előadópárt: <input type="number" name="eloado" min="1" max="5" /></li>
+                <li>mennyire érezted hasznosnak ezt a 90 percet: <input type="number" name="90perc" min="1" max="5" /></li>
+            </ul>
 
-        <h3>Beszéltél már valakivel vagy valahol a gyerekjogokról? Ha igen, kivel-hol?</h3>
-        <label><input type="checkbox" name="a1" /> iskolában</label><br />
-        <label><input type="checkbox" name="b1" /> otthon szülővel</label><br />
-        <label><input type="checkbox" name="c1" /> családban</label><br />
-        <label><input type="checkbox" name="d1" /> baráttal</label><br />
-        <label><input type="checkbox" name="e1" /> UNICEF-től hallottam róla</label><br />
-        <label><input type="checkbox" name="f1" /> interneten olvastam róla</label><br />
-        <label><input type="checkbox" name="g1" /> TV-ben hallottam</label><br />
-        <label><input type="checkbox" name="h1" /> egyéb</label><br />
-        <label><input type="checkbox" name="i1" /> Nem, még sosem hallottam a gyerekjogokról</label><br />
+            <h3>Beszéltél már valakivel vagy valahol a gyerekjogokról? Ha igen, kivel-hol?</h3>
+            <label><input type="checkbox" name="a1" /> iskolában</label><br />
+            <label><input type="checkbox" name="b1" /> otthon szülővel</label><br />
+            <label><input type="checkbox" name="c1" /> családban</label><br />
+            <label><input type="checkbox" name="d1" /> baráttal</label><br />
+            <label><input type="checkbox" name="e1" /> UNICEF-től hallottam róla</label><br />
+            <label><input type="checkbox" name="f1" /> interneten olvastam róla</label><br />
+            <label><input type="checkbox" name="g1" /> TV-ben hallottam</label><br />
+            <label><input type="checkbox" name="h1" /> egyéb</label><br />
+            <label><input type="checkbox" name="i1" /> Nem, még sosem hallottam a gyerekjogokról</label><br />
 
-        <h3>Mi volt a leghasznosabb abból, amit az Ébresztő-órán hallottál?</h3>
-        <label><input type="checkbox" name="a2" /> gyermekjogok</label><br />
-        <label><input type="checkbox" name="b2" /> szegény gyerekek helyzete a világban</label><br />
-        <label><input type="checkbox" name="c2" /> UNICEF munkája</label><br />
-        <label><input type="checkbox" name="d2" /> internetes zaklatást</label><br />
-        <label><input type="checkbox" name="e2" /> segítségnyújtás</label><br />
-        <label><input type="checkbox" name="f2" /> játék</label><br />
-        <label><input type="checkbox" name="g2" /> film</label><br />
-        <label><input type="checkbox" name="h2" /> minden</label><br />
-        <label><input type="checkbox" name="i2" /> semmi</label><br />
-
-
-        <h3>Az Ébresztő-óra melyik része, melyik játék tetszett a legjobban?</h3>
-        <label><input type="checkbox" name="a3" /> gyermekjogok</label><br />
-        <label><input type="checkbox" name="b3" /> szegény gyerekek helyzete a világban</label><br />
-        <label><input type="checkbox" name="c3" /> UNICEF munkája</label><br />
-        <label><input type="checkbox" name="d3" /> internetes zaklatást</label><br />
-        <label><input type="checkbox" name="e3" /> segítségnyújtás</label><br />
-        <label><input type="checkbox" name="f3" /> játék</label><br />
-        <label><input type="checkbox" name="g3" /> film</label><br />
-        <label><input type="checkbox" name="h3" /> minden</label><br />
-        <label><input type="checkbox" name="i3" /> semmi</label><br />
+            <h3>Mi volt a leghasznosabb abból, amit az Ébresztő-órán hallottál?</h3>
+            <label><input type="checkbox" name="a2" /> gyermekjogok</label><br />
+            <label><input type="checkbox" name="b2" /> szegény gyerekek helyzete a világban</label><br />
+            <label><input type="checkbox" name="c2" /> UNICEF munkája</label><br />
+            <label><input type="checkbox" name="d2" /> internetes zaklatást</label><br />
+            <label><input type="checkbox" name="e2" /> segítségnyújtás</label><br />
+            <label><input type="checkbox" name="f2" /> játék</label><br />
+            <label><input type="checkbox" name="g2" /> film</label><br />
+            <label><input type="checkbox" name="h2" /> minden</label><br />
+            <label><input type="checkbox" name="i2" /> semmi</label><br />
 
 
-        <h3>Miről lett volna jó még többet beszélgetni?</h3>
-        <label><input type="checkbox" name="a4" /> gyermekjogok</label><br />
-        <label><input type="checkbox" name="b4" /> szegény gyerekek helyzete a világban</label><br />
-        <label><input type="checkbox" name="c4" /> UNICEF munkája</label><br />
-        <label><input type="checkbox" name="d4" /> internetes zaklatást</label><br />
-        <label><input type="checkbox" name="e4" /> segítségnyújtás</label><br />
-        <label><input type="checkbox" name="f4" /> játék</label><br />
-        <label><input type="checkbox" name="g4" /> film</label><br />
-        <label><input type="checkbox" name="h4" /> minden</label><br />
-        <label><input type="checkbox" name="i4" /> semmi</label><br />
+            <h3>Az Ébresztő-óra melyik része, melyik játék tetszett a legjobban?</h3>
+            <label><input type="checkbox" name="a3" /> gyermekjogok</label><br />
+            <label><input type="checkbox" name="b3" /> szegény gyerekek helyzete a világban</label><br />
+            <label><input type="checkbox" name="c3" /> UNICEF munkája</label><br />
+            <label><input type="checkbox" name="d3" /> internetes zaklatást</label><br />
+            <label><input type="checkbox" name="e3" /> segítségnyújtás</label><br />
+            <label><input type="checkbox" name="f3" /> játék</label><br />
+            <label><input type="checkbox" name="g3" /> film</label><br />
+            <label><input type="checkbox" name="h3" /> minden</label><br />
+            <label><input type="checkbox" name="i3" /> semmi</label><br />
 
-        <h3>Mi az, amiről túl sokat beszéltünk, vagy ami kevésbé tetszett?</h3>
-        <label><input type="checkbox" name="a5" /> gyermekjogok</label><br />
-        <label><input type="checkbox" name="b5" /> szegény gyerekek helyzete a világban</label><br />
-        <label><input type="checkbox" name="c5" /> UNICEF munkája</label><br />
-        <label><input type="checkbox" name="d5" /> internetes zaklatást</label><br />
-        <label><input type="checkbox" name="e5" /> segítségnyújtás</label><br />
-        <label><input type="checkbox" name="f5" /> játék</label><br />
-        <label><input type="checkbox" name="g5" /> film</label><br />
-        <label><input type="checkbox" name="h5" /> minden</label><br />
-        <label><input type="checkbox" name="i5" /> semmi</label><br />
 
-        <h2>Kvíz</h2>
-        <p>Ezzel a játékos kvízzel azt szeretnénk megtudni, hogy mire emlékeztek az órából. Ez nem dolgozat, senki nem fogja leosztályozni, kérjük, a nevedet se írd rá!</p>
-        <ol>
-            <li>
-                <p>A gyermekek jogainak gyűjteményét az ENSZ Gyermekjogi egyezménye tartalmazza.  De mit jelentenek a gyermekjogok?</p>
-                <ul>
-                    <li><label><input type="radio" name="q1" value="a" />Néhány szabályt arról, hogy milyen fantasztikusak a gyerekek!</label></li>
-                    <li><label><input type="radio" name="q1" value="b" />Néhány szabályt arról, hogy a gyerekeknek mindenhez joguk van.</label></li>
-                    <li><label><input type="radio" name="q1" value="c" />Néhány szabályt arról, hogyan kellene a gyerekekkel bánni.</label></li>
-                </ul>
-            </li>
+            <h3>Miről lett volna jó még többet beszélgetni?</h3>
+            <label><input type="checkbox" name="a4" /> gyermekjogok</label><br />
+            <label><input type="checkbox" name="b4" /> szegény gyerekek helyzete a világban</label><br />
+            <label><input type="checkbox" name="c4" /> UNICEF munkája</label><br />
+            <label><input type="checkbox" name="d4" /> internetes zaklatást</label><br />
+            <label><input type="checkbox" name="e4" /> segítségnyújtás</label><br />
+            <label><input type="checkbox" name="f4" /> játék</label><br />
+            <label><input type="checkbox" name="g4" /> film</label><br />
+            <label><input type="checkbox" name="h4" /> minden</label><br />
+            <label><input type="checkbox" name="i4" /> semmi</label><br />
 
-            <li>
-                <p>Miért kell, hogy a gyerekeknek külön jogaik legyenek?</p>
-                <ul>
-                    <li><label><input type="radio" name="q2" value="a" />Mert a gyerekek túl mohók.</label></li>
-                    <li><label><input type="radio" name="q2" value="b" />Nincsenek is külön jogai a gyerekeknek.</label></li>
-                    <li><label><input type="radio" name="q2" value="c" />Mert a gyerekeket külön védelem és gondoskodás illeti meg.</label></li>
-                </ul>
-            </li>
+            <h3>Mi az, amiről túl sokat beszéltünk, vagy ami kevésbé tetszett?</h3>
+            <label><input type="checkbox" name="a5" /> gyermekjogok</label><br />
+            <label><input type="checkbox" name="b5" /> szegény gyerekek helyzete a világban</label><br />
+            <label><input type="checkbox" name="c5" /> UNICEF munkája</label><br />
+            <label><input type="checkbox" name="d5" /> internetes zaklatást</label><br />
+            <label><input type="checkbox" name="e5" /> segítségnyújtás</label><br />
+            <label><input type="checkbox" name="f5" /> játék</label><br />
+            <label><input type="checkbox" name="g5" /> film</label><br />
+            <label><input type="checkbox" name="h5" /> minden</label><br />
+            <label><input type="checkbox" name="i5" /> semmi</label><br />
 
-            <li>
-                <p>Az ENSZ speciális, a gyermekek jogaival és jóllétével foglalkozó szervezete az UNICEF. Mit tesz az UNICEF a gyerekek jogaiért?</p>
-                <ul>
-                    <li><label><input type="radio" name="q3" value="a" />Megbünteti azokat, akik gyerekeket bántanak.</label></li>
-                    <li><label><input type="radio" name="q3" value="b" />Biztosítja, hogy az országokban érvényesüljenek a gyerekjogok.</label></li>
-                    <li><label><input type="radio" name="q3" value="c" />Biztosítja, hogy az ENSZ Gyermekjogi egyezménye szépen és tisztán tartva ki legyen állítva egy genfi múzeumban.</label></li>
-                </ul>
-            </li>
+            <hr />
 
-            <li>
-                <p>Miért fontos, hogy tudd, milyen jogaid vannak?</p>
-                <ul>
-                    <li><label><input type="radio" name="q4" value="a" />Azért, hogy jó osztályzatot kapjak a suliban.</label></li>
-                    <li><label><input type="radio" name="q4" value="b" />Azért, hogy tudjam, hogyan kellene velem bánni.</label></li>
-                    <li><label><input type="radio" name="q4" value="c" />Azért, hogy dicsekedhessek a barátaim előtt.</label></li>
-                </ul>
-            </li>
+            <h2 class="quiztitle">Kvíz</h2>
+            <p class="info">Ezzel a játékos kvízzel azt szeretnénk megtudni, hogy mire emlékeztek az órából. Ez nem dolgozat, senki nem fogja leosztályozni, kérjük, a nevedet se írd rá!</p>
+            <ol>
+                <li>
+                    <p>A gyermekek jogainak gyűjteményét az ENSZ Gyermekjogi egyezménye tartalmazza.  De mit jelentenek a gyermekjogok?</p>
+                    <ul>
+                        <li><label><input type="radio" name="q1" value="a" />Néhány szabályt arról, hogy milyen fantasztikusak a gyerekek!</label></li>
+                        <li><label><input type="radio" name="q1" value="b" />Néhány szabályt arról, hogy a gyerekeknek mindenhez joguk van.</label></li>
+                        <li><label><input type="radio" name="q1" value="c" />Néhány szabályt arról, hogyan kellene a gyerekekkel bánni.</label></li>
+                    </ul>
+                </li>
 
-            <p>Most pedig néhány rövid esetet olvashatsz. Vajon melyik a helyes megoldás?</p>
+                <li>
+                    <p>Miért kell, hogy a gyerekeknek külön jogaik legyenek?</p>
+                    <ul>
+                        <li><label><input type="radio" name="q2" value="a" />Mert a gyerekek túl mohók.</label></li>
+                        <li><label><input type="radio" name="q2" value="b" />Nincsenek is külön jogai a gyerekeknek.</label></li>
+                        <li><label><input type="radio" name="q2" value="c" />Mert a gyerekeket külön védelem és gondoskodás illeti meg.</label></li>
+                    </ul>
+                </li>
 
-            <li>
-                <p>Pippa szülei elváltak, és ő a mamájával él. Apukáját nem láthatja, csak havonta egyszer, de ő szeretne többször találkozni vele. Van joga Pippának kérni ezt?</p>
-                <ul>
-                    <li><label><input type="radio" name="q5" value="a" />Nem. Pippa még gyerek. Nem szólhat bele a felnőttek dolgába.</label></li>
-                    <li><label><input type="radio" name="q5" value="b" />Igen, minden gyereknek figyelembe kell venni a véleményét az őt érintő döntésekben.</label></li>
-                    <li><label><input type="radio" name="q5" value="c" />Persze, Pippa dönti el, hogy mikor és hogyan akar az apukájával találkozni.</label></li>
-                </ul>
-            </li>
+                <li>
+                    <p>Az ENSZ speciális, a gyermekek jogaival és jóllétével foglalkozó szervezete az UNICEF. Mit tesz az UNICEF a gyerekek jogaiért?</p>
+                    <ul>
+                        <li><label><input type="radio" name="q3" value="a" />Megbünteti azokat, akik gyerekeket bántanak.</label></li>
+                        <li><label><input type="radio" name="q3" value="b" />Biztosítja, hogy az országokban érvényesüljenek a gyerekjogok.</label></li>
+                        <li><label><input type="radio" name="q3" value="c" />Biztosítja, hogy az ENSZ Gyermekjogi egyezménye szépen és tisztán tartva ki legyen állítva egy genfi múzeumban.</label></li>
+                    </ul>
+                </li>
 
-            <li>
-                <p>Max 10 éves, és nem nagyon szokta megcsinálni a házi feladatát. Azt gondolja, hogy buta ahhoz, hogy egyedül megválaszolja a kérdéseket. Tud valaki segíteni neki?</p>
-                <ul>
-                    <li><label><input type="radio" name="q6" value="a" />Nem. Maxnak keményebben kell dolgoznia. Ez csak rajta múlik.</label></li>
-                    <li><label><input type="radio" name="q6" value="b" />Maxnak joga van a tanuláshoz, és hogy a tanárai, szülei és más felnőttek segítsék őt abban, hogy jól teljesítsen az iskolában.</label></li>
-                    <li><label><input type="radio" name="q6" value="c" />Maxot jól el kellene verni.</label></li>
-                </ul>
-            </li>
+                <li>
+                    <p>Miért fontos, hogy tudd, milyen jogaid vannak?</p>
+                    <ul>
+                        <li><label><input type="radio" name="q4" value="a" />Azért, hogy jó osztályzatot kapjak a suliban.</label></li>
+                        <li><label><input type="radio" name="q4" value="b" />Azért, hogy tudjam, hogyan kellene velem bánni.</label></li>
+                        <li><label><input type="radio" name="q4" value="c" />Azért, hogy dicsekedhessek a barátaim előtt.</label></li>
+                    </ul>
+                </li>
 
-            <li>
-                <p>Franciskát és testvérét a szülei mindig megverik otthon, ha valami rosszat csinál.<br />Megtehetik ezt? </p>
-                <ul>
-                    <li><label><input type="radio" name="q7" value="a" />Nem, a gyerekeket egyáltalán nem szabad megverni.</label></li>
-                    <li><label><input type="radio" name="q7" value="b" />Igen, egy szülő bármit megtehet.</label></li>
-                    <li><label><input type="radio" name="q7" value="c" />Csak kicsit verhetik meg, nagyon – például úgy, hogy nyoma maradjon, nem.</label></li>
-                </ul>
-            </li>
-        </ol>
+                <p>Most pedig néhány rövid esetet olvashatsz. Vajon melyik a helyes megoldás?</p>
 
-        <input type="submit" value="Küldés" class="btn btn-primary" />
-    </form>
-</article>
+                <li>
+                    <p>Pippa szülei elváltak, és ő a mamájával él. Apukáját nem láthatja, csak havonta egyszer, de ő szeretne többször találkozni vele. Van joga Pippának kérni ezt?</p>
+                    <ul>
+                        <li><label><input type="radio" name="q5" value="a" />Nem. Pippa még gyerek. Nem szólhat bele a felnőttek dolgába.</label></li>
+                        <li><label><input type="radio" name="q5" value="b" />Igen, minden gyereknek figyelembe kell venni a véleményét az őt érintő döntésekben.</label></li>
+                        <li><label><input type="radio" name="q5" value="c" />Persze, Pippa dönti el, hogy mikor és hogyan akar az apukájával találkozni.</label></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <p>Max 10 éves, és nem nagyon szokta megcsinálni a házi feladatát. Azt gondolja, hogy buta ahhoz, hogy egyedül megválaszolja a kérdéseket. Tud valaki segíteni neki?</p>
+                    <ul>
+                        <li><label><input type="radio" name="q6" value="a" />Nem. Maxnak keményebben kell dolgoznia. Ez csak rajta múlik.</label></li>
+                        <li><label><input type="radio" name="q6" value="b" />Maxnak joga van a tanuláshoz, és hogy a tanárai, szülei és más felnőttek segítsék őt abban, hogy jól teljesítsen az iskolában.</label></li>
+                        <li><label><input type="radio" name="q6" value="c" />Maxot jól el kellene verni.</label></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <p>Franciskát és testvérét a szülei mindig megverik otthon, ha valami rosszat csinál.<br />Megtehetik ezt? </p>
+                    <ul>
+                        <li><label><input type="radio" name="q7" value="a" />   Nem, a gyerekeket egyáltalán nem szabad megverni.</label></li>
+                        <li><label><input type="radio" name="q7" value="b" />Igen, egy szülő bármit megtehet.</label></li>
+                        <li><label><input type="radio" name="q7" value="c" />Csak kicsit verhetik meg, nagyon – például úgy, hogy nyoma maradjon, nem.</label></li>
+                    </ul>
+                </li>
+            </ol>
+
+            <input type="submit" value="Küldés" class="btn btn-primary" />
+        </form>
+    </article>
+</body>
