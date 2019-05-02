@@ -7,6 +7,7 @@ namespace Unicef.Models
 {
     public class Form
     {
+
         public long FormId { get; set; }
         public ICollection<Question> Questions { get; set; }
         public int QueryId { get; set; }
@@ -14,7 +15,8 @@ namespace Unicef.Models
 
         public Form()
         {
-            
+            this.Questions = new List<Question>();
+
         }
     }
 }
