@@ -4,10 +4,31 @@
 }
 
 <header>
-    <img src="~/Images/ebreszto.png" alt="Unicef logo" />
+    @*<img src="~/Images/ebreszto.png" alt="Unicef logo" />*@
     <img src="https://lh4.googleusercontent.com/8FFxILqS7i4RQI_JgexL2h4zq55HeL8XZe6AFL0llYmeYJjC5UO9ULd_ckQKAq8wyiXsPVP2mB7CRVrIUGL1Ccy6gd1mOvaJh-wHyBxj_B8OmRwOuhGd5UQdpLFeLru3y8XdgWcyUg2s8sO-WQ" width="605" height="73" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);" />
 </header>
 
-@*<h2>@ViewData["Title"].</h2>*@
 <h3>Kiváncsiak vagyunk a véleményedre!</h3>
+<article>
+    <form method="post" action="submit">
+        <h3>Kérjük, hogy 1-től 5-ig (ahol az 1-es a legrosszabb és az 5-ös a legjobb) értékeld:</h3>
+        <ul>
+            <li>az UNICEF Ébresztő-órát: <input type="number" name="" min="1" max="5" /></li>
+            <li>az UNICEF előadópárt: <input type="number" name="" min="1" max="5" /></li>
+            <li>mennyire érezted hasznosnak ezt a 90 percet: <input type="number" name="" min="1" max="5" /></li>
+        </ul>
 
+        <h3>Beszéltél már valakivel vagy valahol a gyerekjogokról? Ha igen, kivel-hol?</h3>
+        <label><input type="checkbox" name="a" /> iskolában</label><br />
+        <label><input type="checkbox" name="a" /> otthon szülővel</label><br />
+        <label><input type="checkbox" name="a" /> családban</label><br />
+        <label><input type="checkbox" name="a" /> baráttal</label><br />
+        <label><input type="checkbox" name="a" /> UNICEF-től hallottam róla</label><br />
+        <label><input type="checkbox" name="a" /> interneten olvastam róla</label><br />
+        <label><input type="checkbox" name="a" /> TV-ben hallottam</label><br />
+        <label><input type="checkbox" name="a" /> egyéb</label><br />
+        <label><input type="checkbox" name="a" /> Nem, még sosem hallottam a gyerekjogokról</label><br />
+
+        <input type="submit" value="Küldés" />
+    </form>
+</article>
