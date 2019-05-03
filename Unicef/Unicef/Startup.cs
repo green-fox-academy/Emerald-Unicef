@@ -47,6 +47,7 @@ namespace Unicef
             }
 
             app.UseMvc();
+            app.UseStaticFiles();
 
             app.Run(async (context) =>
             {
